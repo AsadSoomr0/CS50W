@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Google Advanced Search</title>
+    <link rel="shortcut icon" href="https://www.google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png">
+    <style>
+        .appbar {
+            color: #d93025;
+            font-size: 20px;
+            margin: 25px 35px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .find {
+            padding-left: 56px;
+            padding-bottom: 10px;
+            height: 30px;
+            display: table-cell;
+            vertical-align: middle;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }   
+
+        a {
+            display: flex;
+            float: right;
+            justify-content: flex-end;
+            font-family: arial, sans-serif;
+            font-size: 14px;
+            padding-right: 20px;
+            color: rgba(0,0,0,.87);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        label {
+            width: 200px;
+            line-height: 26px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            width: 400px;
+            margin-left: 10px;
+            padding: 3px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            display: inline-block;
+            vertical-align: top;
+            margin-bottom: 10px;
+        }
+
+        div.aligned_form {
+            padding-left: 56px;
+        }
+
+        input[type="submit"] {
+            margin-left: 546px;
+            margin-top: 10px;
+            padding: 5px 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            background-color: #4d90fe;
+            background-image: -webkit-linear-gradient(top,#4d90fe,#4787ed);
+            border: 1px solid #3079ed;
+            color: #fff;
+        }
+
+        input[type="submit"]:hover {
+            background-image: linear-gradient(rgb(0 0 0/40%) 0 0);
+
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html">Google Search</a>
+    <div class="appbar">
+        <label style="margin-left: 6px; font-size:20px; padding-left: 15px">Advanced Search</label>
+    </div>
+    <div class="find">
+        <span>Find pages with...</span>
+    </div>
+    <form action="https://www.google.com/search" method="GET" name="f">
+        <div class="aligned_form">
+            <label for="a">all these words:</label>
+            <input type="text" id="a" name="as_q"><br>
+
+            <label for="b">this exact word or phrase:</label>
+            <input type="text" id="b" name="as_epq"><br>
+
+            <label for="c">any of these words:</label>
+            <input type="text" id="c" name="as_oq"><br>
+
+            <label for="d">none of these words:</label>
+            <input type="text" id="d" name="as_eq"><br>
+        </div>
+        <input type="submit" value="Advanced Search">
+    </form>
+</body>
+</html>

@@ -91,21 +91,30 @@
                 object-fit: contain;
                 object-position: center bottom;
             }
+
+            .images {
+                color: #4285f4;
+                font: 16px/16px roboto-regular, arial, sans-serif;
+                position: absolute;
+                left: 375px;
+                bottom: 130px;
+                white-space: nowrap;
+            }
         </style>
     </head>
 
     <body>
         <div class="links">
-            <a href = "imagesearch.html">Google Images</a>
-            <a href = "advancedsearch.html">Advanced Search</a>
+            <a href = "index.html">Google Search</a>
         </div>
         <div class="centered">
             <img id="lnXdpd" alt="Google" height="92" src="googlelogo_color_272x92dp.png">
+            <span class="images">Images</span>
             <form action="https://www.google.com/search">
                 <input id="input" type="text" name="q">
+                <input type="hidden" name="tbm" value="isch">
                 <div class = "cbut"> 
-                    <input type="submit" class = sbuttons role= "button" tabindex = "0" aria-label="Google Search" value="Google Search">
-                    <input type="submit" class = sbuttons name= "btnI" value="I'm Feeling Lucky" role="button" tabindex="0">
+                    <input type="submit" class = sbuttons role= "button" tabindex = "0" aria-label="Image Search" value="Image Search">
                 </div>
             </form>
         </div>
